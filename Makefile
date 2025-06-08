@@ -80,7 +80,7 @@ SRC 		= 		component/create_component.c						    \
 
 OBJ			=		$(SRC:.c=.o)
 
-NAME		=		libgraphic.a
+NAME		=		libverse.a
 
 HEADER	=	include/libgraphic.h			\
           	include/macro.h			  		\
