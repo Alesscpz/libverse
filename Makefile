@@ -40,7 +40,7 @@ UT_NAME	=	graphics_tests
 UT_FLAGS	=	--coverage -lcriterion
 
 draw_name:
-	@cat docs/front.sh
+	@cat docs/front
 
 all:		$(NAME)
 
