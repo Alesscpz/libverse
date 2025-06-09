@@ -39,13 +39,16 @@ UT_NAME	=	graphics_tests
 
 UT_FLAGS	=	--coverage -lcriterion
 
-all:		$(NAME)
+draw_name:
+	@./docs/front.sh
 
-$(NAME):	$(OBJ)
+all:		@$(NAME)
+
+$(NAME):	draw_name	$(OBJ)
 	@$(AR) rc $(NAME) $(OBJ)
 
 clean:
-	$(RM) $(OBJ)
+	@$(RM) $(OBJ)
 	@find -name "*~" -delete -o -name "#*#" -delete
 	@find -name "*.gcda" -delete -o -name "*.gcno" -delete
 
