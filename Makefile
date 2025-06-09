@@ -40,9 +40,9 @@ UT_NAME	=	graphics_tests
 UT_FLAGS	=	--coverage -lcriterion
 
 draw_name:
-	@./docs/front.sh
+	@cat docs/front.sh
 
-all:		@$(NAME)
+all:		$(NAME)
 
 $(NAME):	draw_name	$(OBJ)
 	@$(AR) rc $(NAME) $(OBJ)
