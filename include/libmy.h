@@ -1,6 +1,6 @@
 /*
 ** EPITECH PROJECT, 2025
-** Wolf3D
+** Libverse
 ** File description:
 ** libmy.h
 */

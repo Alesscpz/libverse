@@ -1,6 +1,6 @@
 .vscode
 unit_test*
-wolf3d
+libverse
 *.save
 *.gcno
 *.gcda
@@ -10,4 +10,4 @@ wolf3d
 *.sh
 *~
 \#*\#
-wolf3d
+libverse

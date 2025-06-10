@@ -40,20 +40,23 @@ UT_NAME	=	graphics_tests
 UT_FLAGS	=	--coverage -lcriterion
 
 draw_name:
-	@cat docs/front
+	@cat .name
 
 all:		$(NAME)
 
 $(NAME):	draw_name	$(OBJ)
 	@$(AR) rc $(NAME) $(OBJ)
+	@echo "Library Libverse: Ready to use"
 
 clean:
 	@$(RM) $(OBJ)
 	@find -name "*~" -delete -o -name "#*#" -delete
 	@find -name "*.gcda" -delete -o -name "*.gcno" -delete
+	@echo "Library Libverse: File object deleted"
 
 fclean: clean
 	@find -name "coding-style-reports.log" -delete
+	@echo "Library Libverse: Deleted"
 
 re:	fclean all
 
